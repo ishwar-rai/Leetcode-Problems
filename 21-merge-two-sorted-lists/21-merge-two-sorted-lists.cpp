@@ -28,18 +28,19 @@ public:
             temp = temp->next;
         }
         
-        while(list1!=NULL){
-            temp->next = list1;
-            list1 = list1->next;
-            temp = temp->next;
-        }
+        // while(list1!=NULL){
+        //     temp->next = list1;
+        //     list1 = list1->next;
+        //     temp = temp->next;
+        // }
+        if(list1) temp->next = list1;
         
-        while(list2!=NULL){
-            temp->next = list2;
-            list2 = list2->next;
-            temp = temp->next;
-        }
-        
+        // while(list2!=NULL){
+        //     temp->next = list2;
+        //     list2 = list2->next;
+        //     temp = temp->next;
+        // }
+        if(list2) temp->next = list2;
         
        
         
