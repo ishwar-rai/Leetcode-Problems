@@ -16,12 +16,10 @@ class Solution {
         return false;
     }
     public boolean searchMatrix(int[][] matrix, int target) {
-        boolean ans=false;
         for(int[] a: matrix){
-            ans = solve(a, target);
-            if(ans) return ans;
+            if(solve(a, target)) return true;
         }
         
-        return ans;
+        return false;
     }
 }
